@@ -19,9 +19,8 @@ public class BonusShield : BaseBonus
         }
     }
 
-    protected override void Activate(GameObject player)
+    protected override void Activate(Player player)
     {
-        CheckShield();
-        _currentShield.Activate(_liveTime, player.transform);
+        player.ActivateShield(_liveTime);
     }
 }

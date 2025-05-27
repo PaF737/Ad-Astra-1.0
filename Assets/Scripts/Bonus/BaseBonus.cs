@@ -16,13 +16,13 @@ public abstract class BaseBonus : MonoBehaviour
     {
         if (collision.TryGetComponent(out Player player))
         {
-            Activate(player.gameObject);
+            Activate(player);
             Activated.Invoke();
             gameObject.SetActive(false);
         }
     }
 
-    protected virtual void Activate(GameObject player)
+    protected virtual void Activate(Player player)
     {
 
     }

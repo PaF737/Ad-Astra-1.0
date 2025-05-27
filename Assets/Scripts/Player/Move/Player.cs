@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 4f;
+    
+    [SerializeField] private EnergyShield _shield;
 
     public Vector2 Movement { get; private set; } 
 
@@ -12,15 +14,17 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rb;
     private Animator _animator;
     
-
-
     private void Awake()
     {
         _controller = new Controller();
         _animator = GetComponent<Animator>();      
         _rb = GetComponent<Rigidbody2D>();
     }
-
+    
+    public void ActivateShield(float liveTime)
+    {
+        _shield.Activate(liveTime, transform);
+    }
 
     private void Update()
     {

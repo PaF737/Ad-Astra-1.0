@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d21bd32b7178943b77e519d0470410, type: 3}
+  m_Name: Game Bonuse Data
+  m_EditorClassIdentifier: 
+  Bonuses:
+  - {fileID: 7692288830762808129, guid: 726b776c80114ec429222fe9e582a5ac, type: 3}
+  - {fileID: 5179255241297713281, guid: 54611dd6e13cde14cb2cac16616ca9ed, type: 3}

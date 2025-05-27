@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Fiery : MonoBehaviour
 {
-    [SerializeField] private Player controller;
-
     private Animator _animator;
 
     private void Awake()
@@ -11,10 +9,9 @@ public class Fiery : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    public void SetPosition(float moveX, float moveY)
     {
-        _animator.SetFloat("MoveX", controller.Movement.x);
-        _animator.SetFloat("MoveY", controller.Movement.y);
+        _animator.SetFloat("MoveX", moveX);
+        _animator.SetFloat("MoveY", moveY);
     }
-
 }

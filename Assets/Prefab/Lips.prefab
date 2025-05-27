@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: -6297302337407267273}
   - component: {fileID: -3538822663230653909}
   - component: {fileID: 1437080578378761745}
+  - component: {fileID: 3157354367185830283}
   m_Layer: 0
   m_Name: Lips
   m_TagString: Untagged
@@ -250,10 +251,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7967528307249511455}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 3157354367185830283}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: Deactivate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -347,6 +348,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d82566648620bad4eaafc894224af1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3157354367185830283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9060841951643350531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b321f68cbee0dd74bb78e74e6df93733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyMove: {fileID: 7967528307249511455}
 --- !u!1001 &6948920174362769571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,6 +373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCannonSingle
       objectReference: {fileID: 0}
+    - target: {fileID: 4341354755526911505, guid: 7b41d9ce94492a74aa3c7d93787a693f, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 1780009898632628299, guid: 4928c84f65a702f44b9d07114b2c26b5, type: 3}
     - target: {fileID: 7110618529418122710, guid: 7b41d9ce94492a74aa3c7d93787a693f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

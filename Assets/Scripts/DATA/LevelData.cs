@@ -13,9 +13,11 @@ public class LevelData : ScriptableObject
 
 public class Wave
 {
-    public GameObject EnemyPrefab;
+    public Enemy EnemyPrefab;
     [Range(1, 100)]
     public int CountInWave;
     [Range (1, 360)]
     public int WaitAfterWave;
+    [Range(0.1f, 10f)]
+    public float SpawnCD;
 }

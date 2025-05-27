@@ -1374,7 +1374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6caeb76bfc83845b317340a4ca765d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 698978923}
 --- !u!1001 &550633021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1383,6 +1382,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 698978920}
     m_Modifications:
+    - target: {fileID: 822505934453893304, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6430949193588013270, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570873723274442003, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 4373362180747832246, guid: a052f0f8e2d926349a49ee42fb4c8b17, type: 3}
     - target: {fileID: 6748353832764276987, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
       propertyPath: m_Name
       value: PlayerCannonMultiple (1)
@@ -1879,6 +1890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 6
   _shield: {fileID: 1962902140}
+  _fiery: {fileID: 547765448}
 --- !u!61 &698978924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1937,6 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7ac6b7f123afa44a36088514e411c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 519420031}
 --- !u!114 &698978926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2697,7 +2710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bonusGenerator: {fileID: 1831209624}
-  _bonusQueue: {fileID: 1831209625}
+  _camera: {fileID: 519420031}
 --- !u!114 &1831209621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2793,7 +2806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c701327365d9c3541a1575017c35ecb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bonusQueue: {fileID: 1831209625}
   _gameBonusData: {fileID: 11400000, guid: 065c67fd389e0ca40b9d9074f6d5d2ed, type: 2}
 --- !u!114 &1831209625
 MonoBehaviour:
@@ -3114,6 +3126,22 @@ PrefabInstance:
       propertyPath: _shothInterval
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822505934453893304, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742054282438580759, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 4373362180747832246, guid: a052f0f8e2d926349a49ee42fb4c8b17, type: 3}
+    - target: {fileID: 6430949193588013270, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570873723274442003, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 4373362180747832246, guid: a052f0f8e2d926349a49ee42fb4c8b17, type: 3}
     - target: {fileID: 6748353832764276987, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
       propertyPath: m_Name
       value: PlayerCannonMultiple
@@ -3162,6 +3190,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7599950917214438822, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 4373362180747832246, guid: a052f0f8e2d926349a49ee42fb4c8b17, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Level0
   m_EditorClassIdentifier: 
   waves:
-  - EnemyPrefab: {fileID: 9060841951643350531, guid: 7b22d555b6364c54b83f298c27eacdcd, type: 3}
+  - EnemyPrefab: {fileID: 3157354367185830283, guid: 7b22d555b6364c54b83f298c27eacdcd, type: 3}
     CountInWave: 5
     WaitAfterWave: 2
-  - EnemyPrefab: {fileID: 9060841951643350531, guid: 7b22d555b6364c54b83f298c27eacdcd, type: 3}
+    SpawnCD: 0.5
+  - EnemyPrefab: {fileID: 3157354367185830283, guid: 7b22d555b6364c54b83f298c27eacdcd, type: 3}
     CountInWave: 10
     WaitAfterWave: 1
+    SpawnCD: 0.5

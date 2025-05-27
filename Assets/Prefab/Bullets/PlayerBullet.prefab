@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3143762834368585124}
   - component: {fileID: 4090285773994079820}
   - component: {fileID: 3733462253896026151}
+  - component: {fileID: 4373362180747832246}
   m_Layer: 7
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -191,3 +192,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 150
+--- !u!114 &4373362180747832246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758422353412199898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd0d06cd93024242ac449420f25362a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

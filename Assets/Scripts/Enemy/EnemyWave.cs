@@ -6,8 +6,6 @@ using System.Collections;
 public class EnemyWave : MonoBehaviour
 {
     [SerializeField] private BonusGenerator _bonusGenerator;
-    [SerializeField] private BonusQueue _bonusQueue;
-
 
     private LevelData _level;
     private int _indexWave;
@@ -27,8 +25,10 @@ public class EnemyWave : MonoBehaviour
 
                 if (enemy.TryGetComponent(out EnemyBonusDrop enemyBonusDrop))
                 {
-                    enemyBonusDrop.SetBonusQueue(_bonusQueue);
-                    enemyBonusDrop.SetHaveBonus(_bonusGenerator.TryGetBonus());
+                    if(_bonusGenerator.TryGetBonus(out BaseBonus bonus))
+                    {
+                        enemyBonusDrop.SetBonus(bonus);
+                    }
                 }
 
                 enemy.transform.position = startPosition;
@@ -40,7 +40,7 @@ public class EnemyWave : MonoBehaviour
 
     private void Awake()
     {
-        int index = new LevelNameData().GetLevelIndex();
+        int index = LevelSaveData.GetLevelIndex();
         _level = Resources.Load<LevelData>($"Levels/Level{index}");
     }
 
@@ -61,7 +61,7 @@ public class EnemyWave : MonoBehaviour
 
             yield return wait;
         }
-        if (_indexWave < _level.waves[_indexWave].WaitAfterWave)
+        if (_indexWave < _level.waves.Count)
         {
             Invoke(nameof(Activate), _level.waves[_indexWave].WaitAfterWave);
             _indexWave++;

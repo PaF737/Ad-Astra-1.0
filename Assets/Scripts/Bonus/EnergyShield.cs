@@ -3,22 +3,18 @@ using UnityEngine;
 
 public class EnergyShield : MonoBehaviour
 {
-    private Vector3 _offset = new Vector3(0, -0.3f, 0);
-
     private float _currentTime;
     private bool _isEnabled;
 
     public bool IsEnabled => _isEnabled;
 
-    public void Activate(float liveTime, Transform target)
+    public void Activate(float liveTime)
     {
         _currentTime += liveTime;
 
         if (_isEnabled)
             return;
 
-        transform.SetParent(target);
-        transform.localPosition = _offset;
         ShowShield(true);
         StartCoroutine(Timer());
     }
@@ -42,6 +38,5 @@ public class EnergyShield : MonoBehaviour
         
         _currentTime = 0;
         ShowShield(false);
-        transform.SetParent(null);
     }
 }

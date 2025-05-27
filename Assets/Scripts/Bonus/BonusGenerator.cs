@@ -6,7 +6,6 @@ using UnityEngine.UIElements;
 
 public class BonusGenerator : MonoBehaviour
 {
-    [SerializeField] private BonusQueue _bonusQueue;
     [SerializeField] private GameBonuseDataSO _gameBonusData;
 
     private List<int> _bonusChance = new List<int>();
@@ -28,8 +27,9 @@ public class BonusGenerator : MonoBehaviour
         _bonusChance.Add(_maxChance * 3);
     }
 
-    public bool TryGetBonus()
+    public bool TryGetBonus(out BaseBonus bonus)
     {
+        bonus = null;
         int chance = UnityEngine.Random.Range(0, _bonusChance[_bonusChance.Count - 1]);
         bool yesChance = false;
 
@@ -40,7 +40,7 @@ public class BonusGenerator : MonoBehaviour
             {
                 if (chance >= min && chance < _bonusChance[i])
                 {
-                    Generate(_gameBonusData.Bonuses[i].gameObject);
+                    bonus = Generate(_gameBonusData.Bonuses[i]);
                     yesChance = true;
                     break;
                 }
@@ -52,10 +52,10 @@ public class BonusGenerator : MonoBehaviour
         return yesChance;
     }
 
-    private void Generate(GameObject bonusPrefab)
+    private BaseBonus Generate(BaseBonus bonusPrefab)
     {
-        GameObject bonus = Instantiate(bonusPrefab, _bonusQueue.transform);
-        bonus.SetActive(false);
-        _bonusQueue.AddObject(bonus);
+        BaseBonus bonus = Instantiate(bonusPrefab, transform);
+        bonus.gameObject.SetActive(false);
+        return bonus;
     }
 }

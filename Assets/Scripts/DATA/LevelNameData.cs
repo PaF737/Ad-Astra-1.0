@@ -1,19 +1,17 @@
 using UnityEngine;
 
-public class LevelNameData
+public static class LevelSaveData
 {
-
-
     private const string Key = "SceneName";
     private const string KeyLevelIndex = "LEvelIndex";
 
-    public void SetName(string name)
+    public static void SetName(string name)
     {
         PlayerPrefs.SetString(Key, name);
         PlayerPrefs.Save();
     }
 
-    public string GetName()
+    public static string GetName()
     {
         if (PlayerPrefs.HasKey(Key))
         {
@@ -22,13 +20,13 @@ public class LevelNameData
         return null;
     }
 
-    public void SetLevelIndex(int levelIndex)
+    public static void SetLevelIndex(int levelIndex)
     {
         PlayerPrefs.SetInt(KeyLevelIndex, levelIndex);
         PlayerPrefs.Save();
     }
 
-    public int GetLevelIndex()
+    public static int GetLevelIndex()
     {
         if (PlayerPrefs.HasKey(KeyLevelIndex))
         {

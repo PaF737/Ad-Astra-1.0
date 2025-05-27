@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     
     public void ActivateShield(float liveTime)
     {
-        _shield.Activate(liveTime, transform);
+        _shield.Activate(liveTime);
     }
 
     private void Update()

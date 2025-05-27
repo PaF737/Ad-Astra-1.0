@@ -2,24 +2,19 @@ using UnityEngine;
 
 public class EnemyBonusDrop : MonoBehaviour
 {
-    private bool _haveBonus;
-    private BonusQueue _bonusQueue;
+    private BaseBonus _bonus;
 
-    public void SetBonusQueue(BonusQueue bonusQueue)
+    public void SetBonus(BaseBonus bonus)
     {
-        _bonusQueue = bonusQueue;
-    }
-
-    public void SetHaveBonus(bool value)
-    {
-        _haveBonus = value;
+        _bonus = bonus;
     }
 
     public void Activate()
     {
-        if (_haveBonus)
+        if (_bonus != null)
         {
-            _bonusQueue.Activate(transform.position);
+            _bonus.gameObject.SetActive(true);
+            _bonus.transform.position = transform.position;
         }
     }
 }

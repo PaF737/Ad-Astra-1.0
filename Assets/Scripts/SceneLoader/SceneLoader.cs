@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
    [SerializeField] private string _sceneNameSaved;
-    private readonly LevelNameData _levelName = new LevelNameData();
 
     private void Start()
     {
@@ -17,9 +16,9 @@ public class SceneLoader : MonoBehaviour
 
     public void Load()
     {
-        if (!string.IsNullOrEmpty(_levelName.GetName()))
+        if (!string.IsNullOrEmpty(LevelSaveData.GetName()))
         {
-            StartCoroutine(ScencesController(_levelName.GetName()));
+            StartCoroutine(ScencesController(LevelSaveData.GetName()));
         }
     }
 

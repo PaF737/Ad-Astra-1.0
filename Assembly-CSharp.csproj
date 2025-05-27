@@ -73,6 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\Bonus\GameBonuseDataSO.cs" />
     <Compile Include="Assets\Scripts\Bonus\BonusQueue.cs" />
+    <Compile Include="Assets\Scripts\Player\Move\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\Health\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMove.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />

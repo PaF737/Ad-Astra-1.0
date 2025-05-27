@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IGameEventListener
 {
     [SerializeField] private float _moveSpeed = 4f;
 
     [SerializeField] private EnergyShield _shield;
     [SerializeField] private Fiery _fiery;
+    [SerializeField] private PlayerShooting _shooting;
+    [SerializeField] private GameEvent _gameEvent;
 
     public Vector2 Movement { get; private set; }
 
@@ -20,7 +22,7 @@ public class Player : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnEnable()
+    private void Start()
     {
         _controller.Enable();
     }
@@ -33,6 +35,11 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+    }
+
+    public void InitEvent()
+    {
+        _shooting.ActivateShooting();
     }
 
     public void ActivateShield(float liveTime)
@@ -55,5 +62,15 @@ public class Player : MonoBehaviour
     private void Move()
     {
         _rb.MovePosition(_rb.position + Movement * (_moveSpeed * Time.fixedDeltaTime));
+    }
+
+    private void OnEnable()
+    {
+        _gameEvent.RegisterListener(this);
+    }
+
+    private void OnDisable()
+    {
+        _gameEvent.UnregisterListener(this);
     }
 }

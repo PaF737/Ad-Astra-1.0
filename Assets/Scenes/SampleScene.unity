@@ -1386,6 +1386,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1588723962805052321, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: _action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6430949193588013270, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1450,11 +1454,24 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9076747658339046748, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+    - {fileID: 1588723962805052321, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+--- !u!114 &550633022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6570873723274442003, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+  m_PrefabInstance: {fileID: 550633021}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6f0b4074182f243a1e49e38a708e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &584170073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1763,7 @@ GameObject:
   - component: {fileID: 698978923}
   - component: {fileID: 698978925}
   - component: {fileID: 698978926}
+  - component: {fileID: 698978927}
   m_Layer: 9
   m_Name: StarShip
   m_TagString: Untagged
@@ -1891,6 +1909,8 @@ MonoBehaviour:
   _moveSpeed: 6
   _shield: {fileID: 1962902140}
   _fiery: {fileID: 547765448}
+  _shooting: {fileID: 698978927}
+  _gameEvent: {fileID: 11400000, guid: 527ced14e3a728249b339b4984e623ab, type: 2}
 --- !u!61 &698978924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1981,6 +2001,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &698978927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698978914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb27d6765a5f1f748a1e910ba436859a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootingInterval: 0.5
+  _cannons:
+  - {fileID: 14360766053766782}
+  - {fileID: 550633022}
 --- !u!1 &717587451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,6 +3166,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1588723962805052321, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+      propertyPath: _action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4742054282438580759, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
       propertyPath: _bulletPrefab
       value: 
@@ -3194,11 +3234,24 @@ PrefabInstance:
       propertyPath: _bulletPrefab
       value: 
       objectReference: {fileID: 4373362180747832246, guid: a052f0f8e2d926349a49ee42fb4c8b17, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9076747658339046748, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+    - {fileID: 1588723962805052321, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+--- !u!114 &14360766053766782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6570873723274442003, guid: 168b6cce484ed8440a5ca2427615d0d5, type: 3}
+  m_PrefabInstance: {fileID: 14360766053766781}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6f0b4074182f243a1e49e38a708e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

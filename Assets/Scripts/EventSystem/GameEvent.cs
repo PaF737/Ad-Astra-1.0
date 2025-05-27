@@ -1,18 +1,23 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+public interface IGameEventListener
+{
+    void InitEvent();
+}
+
 [CreateAssetMenu(fileName = "Game Event", menuName = "GameSO/Game Event")]
 
 public class GameEvent : ScriptableObject
 {
-    private readonly List<GameEventListener> _listeners = new List<GameEventListener>();
+    private readonly List<IGameEventListener> _listeners = new List<IGameEventListener>();
 
-    public void RegisterListener(GameEventListener listener)
+    public void RegisterListener(IGameEventListener listener)
     {
         _listeners.Add(listener);
     }
 
-    public void UnregisterListener(GameEventListener listener)
+    public void UnregisterListener(IGameEventListener listener)
     {
         _listeners.Remove(listener);
     }

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9F8ACDA4-BD4E-CF3E-4644-0D15E7395520}</ProjectGuid>
+    <ProjectGuid>{0890234C-9A47-0A08-1A86-4D08BD1A9223}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,88 +61,88 @@
     <Analyzer Include="C:\Простір для збереження\Unity Hub\6000.0.43f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\SceneLoader\SaveSafeArea.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Script\Bonus\BonusShield.cs" />
+    <Compile Include="Assets\Scripts\Player\Move\PlayerStartPosition.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\Script\Player\Move\PlayerStartPosition.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\Script\Camera\CameraBorderHight.cs" />
+    <Compile Include="Assets\Scripts\EventSystem\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader\SceneLoader.cs" />
+    <Compile Include="Assets\Controller.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyBonusDrop.cs" />
-    <Compile Include="Assets\Script\Player\Bullet\IDamageble.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyMove.cs" />
-    <Compile Include="Assets\Script\Player\Bullet\BulletCollision.cs" />
-    <Compile Include="Assets\Script\Bonus\BonusQueue.cs" />
-    <Compile Include="Assets\Script\Player\Bullet\IDamageable.cs" />
+    <Compile Include="Assets\Scripts\Bonus\GameBonuseDataSO.cs" />
+    <Compile Include="Assets\Scripts\Bonus\BonusQueue.cs" />
+    <Compile Include="Assets\Scripts\Health\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMove.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\Script\Player\Weapon\CannonSingle.cs" />
-    <Compile Include="Assets\Script\Player\Move\Controller.cs" />
-    <Compile Include="Assets\Script\Bonus\BonusGenerator.cs" />
-    <Compile Include="Assets\Script\Health\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\BulletsPool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\Script\Environmet\ObjectScore.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\BulletMove.cs" />
+    <Compile Include="Assets\Scripts\DATA\SizePanel.cs" />
+    <Compile Include="Assets\Scripts\Effects\DestroyEffectSpawner.cs" />
+    <Compile Include="Assets\Scripts\Effects\DestroyEffect.cs" />
+    <Compile Include="Assets\Scripts\Effects\DestroyEffectGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Script\Effects\DestroyEffectSpawner.cs" />
-    <Compile Include="Assets\Script\SceneLoader\SaveSafeArea.cs" />
-    <Compile Include="Assets\Script\SceneLoader\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Environmet\ObjectScore.cs" />
+    <Compile Include="Assets\Scripts\Player\Move\Fiery.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\Script\SceneLoader\PanelSize.cs" />
-    <Compile Include="Assets\Script\DATA\SafeAreaDATA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\Script\Bonus\BonusHealth.cs" />
+    <Compile Include="Assets\Scripts\Bonus\EnergyShield.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\BulletCollision.cs" />
+    <Compile Include="Assets\Scripts\Environmet\BackgroundController.cs" />
+    <Compile Include="Assets\Scripts\Player\Weapon\CannonBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\Script\DATA\LevelNameData.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ScenePath.cs" />
+    <Compile Include="Assets\Scripts\Player\Weapon\CannonSingle.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\IDamageble.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\Script\Player\Weapon\ShotTimer.cs" />
-    <Compile Include="Assets\Script\Bonus\BaseBonus.cs" />
-    <Compile Include="Assets\Script\EventSystem\GameEvent.cs" />
-    <Compile Include="Assets\Script\Player\Move\Fiery.cs" />
+    <Compile Include="Assets\Scripts\DATA\Path.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyBonusDrop.cs" />
+    <Compile Include="Assets\Scripts\Environmet\ScoreCollector.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\Script\Health\ObjectHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Scripts\DATA\SafeAreaDATA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\Script\Environmet\UIScore.cs" />
-    <Compile Include="Assets\Script\Camera\CameraBorderVentical.cs" />
-    <Compile Include="Assets\Script\Bonus\GameBonuseDataSO.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraBorderVentical.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\IDamageable.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraBorderHight.cs" />
+    <Compile Include="Assets\Scripts\EventSystem\GameEventListener.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\DATA\LevelData.cs" />
+    <Compile Include="Assets\Scripts\Bonus\BonusShield.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Script\Camera\CameraWidth.cs" />
-    <Compile Include="Assets\Script\Player\Move\Player.cs" />
-    <Compile Include="Assets\Script\StartEvent.cs" />
-    <Compile Include="Assets\Script\Effects\DestroyEffect.cs" />
-    <Compile Include="Assets\Script\EventSystem\GameEventListener.cs" />
-    <Compile Include="Assets\Script\Effects\DestroyEffectGenerator.cs" />
-    <Compile Include="Assets\Script\Player\Weapon\CannonBase.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyWave.cs" />
+    <Compile Include="Assets\Scripts\StartEvent.cs" />
+    <Compile Include="Assets\Scripts\Bonus\BaseBonus.cs" />
+    <Compile Include="Assets\Scripts\Bonus\BonusGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\Script\Bonus\EnergyShield.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader\PanelSize.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Script\Player\Bullet\BulletsPool.cs" />
-    <Compile Include="Assets\Script\Player\Bullet\BulletMove.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\Script\Environmet\ScoreCollector.cs" />
-    <Compile Include="Assets\Script\Environmet\BackgroundController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Scripts\Environmet\UIScore.cs" />
+    <Compile Include="Assets\Scripts\Health\ObjectHealth.cs" />
+    <Compile Include="Assets\Scripts\Player\Weapon\ShotTimer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\Script\DATA\LevelData.cs" />
-    <Compile Include="Assets\Script\DATA\Path.cs" />
-    <Compile Include="Assets\Script\Enemy\ScenePath.cs" />
-    <Compile Include="Assets\Script\DATA\SizePanel.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyWave.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyDestraction.cs" />
-    <Compile Include="Assets\Script\Player\Weapon\CannonMultiple.cs" />
+    <Compile Include="Assets\Scripts\DATA\LevelNameData.cs" />
+    <Compile Include="Assets\Scripts\Player\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Bonus\BonusHealth.cs" />
+    <Compile Include="Assets\Scripts\Player\Weapon\CannonMultiple.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyDestraction.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraWidth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -14,7 +14,7 @@ public abstract class BaseBonus : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Player player))
+        if (collision.TryGetComponent(out PlayerMove player))
         {
             Activate(player.gameObject);
             Activated.Invoke();

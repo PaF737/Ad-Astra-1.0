@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Fiery : MonoBehaviour
 {
-    [SerializeField] private Player controller;
+    [SerializeField] private PlayerMove controller;
 
     private Animator _animator;
 
